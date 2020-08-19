@@ -1,8 +1,8 @@
 {
   "name": "umi-plugin-console",
   "main": "lib/index.js",
-  "version": "2.0.1",
-  "description": "用于 umi 打包过程中配置各个钩子输出一些提示性的信息",
+  "version": "2.0.2",
+  "description": "用于 umi 打包过程中配置各个钩子 log 输出一些提示性的信息，比较适合写命令行工具时候使用，友好提示用户",
   "authors": {
     "name": "Tw93",
     "email": "tw93@qq.com"
@@ -52,8 +52,7 @@
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js"
+    "pre-commit": "lint-staged"
   },
   "files": [
     "lib"

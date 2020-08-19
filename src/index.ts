@@ -15,7 +15,7 @@ export default function(api: IApi) {
   const options = api.userConfig.console;
   Object.keys(options).forEach(name => {
     api[name](memo => {
-      api.logger.log(options[name]);
+      api.logger.info(options[name]);
       return memo;
     });
   });
